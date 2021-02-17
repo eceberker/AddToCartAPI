@@ -1,4 +1,4 @@
-# Basic Shopping Cart Web API built on .NET Core and EntityFrameWork
+# Basic Shopping Cart Web API built on .NET Core and EntityFramework
 
 
 Database is on AWS RDS, connectionstring is defined in appsettings.json file
