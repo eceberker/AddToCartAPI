@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AddToCartAPI.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:AddToCartAPI.WebAPI.Controllers.ShoppingCartController.GetShoppingCart(System.Int64)">
+            <summary>
+            Gets Shopping Cart with cartId
+            </summary>
+            <param name="cartId"></param>
+            <returns></returns>
+            <response code ="200">Returns requested Shopping Cart</response>
+            <response code ="404">Returns when Shopping Cart is not found</response>
+        </member>
+        <member name="M:AddToCartAPI.WebAPI.Controllers.ShoppingCartController.AddProductToShoppingCart(AddToCartAPI.Service.ViewModels.CartProductViewModel)">
+            <summary>
+            Adds product to Shopping Cart requested from body
+            </summary>
+            <param name="cartProduct"></param>
+            <remarks>
+            Message will be filled with response
+            
+            Sample Request
+                    
+                    
+            
+                    POST /ShoppingCart/AddProductToShoppingCart
+                    {
+                        "CartId" : 9,
+                        "ProductId": 8,
+                        "ProductName": "test_product6",
+                        "Quantity" : 1,
+                        "Price" : 2000,
+                        "VariantId" : 5,
+                        "CategoryId": 2       
+                    }
+            
+            
+            </remarks>
+            <returns></returns>
+            <response code ="200">Returns added product and Database message, if there is an error return Database message</response>
+            
+        </member>
+    </members>
+</doc>
