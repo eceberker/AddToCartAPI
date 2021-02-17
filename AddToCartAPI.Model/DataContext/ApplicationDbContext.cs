@@ -26,10 +26,16 @@ namespace AddToCartAPI.Model.DataContext
                 b.HasIndex("ProductId");
 
                 b.HasData(
-                    new Product { ProductId = 4, ProductName = "test_product4", Price = 150, Stock = 1000, VariantId = 1, CategoryId = 1 },
-                    new Product { ProductId = 5, ProductName = "test_product5", Price = 350, Stock = 500, VariantId = 3, CategoryId = 2 },
-                    new Product { ProductId = 6, ProductName = "test_product6", Price = 50, Stock = 750, VariantId = 4, CategoryId = 3 },
-                    new Product { ProductId = 7, ProductName = "test_product7", Price = 20, Stock = 250, VariantId = 6, CategoryId = 1 }
+                    new Product { ProductId = 1, ProductName = "test_product1", Price = 150, Stock = 1000, VariantId = 1, CategoryId = 1 },
+                    new Product { ProductId = 2, ProductName = "test_product2", Price = 150, Stock = 1000, VariantId = 1, CategoryId = 1 },
+                    new Product { ProductId = 3, ProductName = "test_product3", Price = 150, Stock = 1000, VariantId = 1, CategoryId = 1 },
+                    new Product { ProductId = 4, ProductName = "test_product4", Price = 350, Stock = 500, VariantId = 3, CategoryId = 2 },
+                    new Product { ProductId = 5, ProductName = "test_product5", Price = 50, Stock = 750, VariantId = 4, CategoryId = 3 },
+                    new Product { ProductId = 6, ProductName = "test_product6", Price = 120, Stock = 250, VariantId = 1, CategoryId = 2 },
+                    new Product { ProductId = 7, ProductName = "test_product7", Price = 290, Stock = 250, VariantId = 1, CategoryId = 3 },
+                    new Product { ProductId = 8, ProductName = "test_product8", Price = 40, Stock = 250, VariantId = 1, CategoryId = 4 },
+                    new Product { ProductId = 9, ProductName = "test_product9", Price = 10, Stock = 250, VariantId = 1, CategoryId = 1 },
+                    new Product { ProductId = 10, ProductName = "test_product10", Price = 30, Stock = 250, VariantId = 1, CategoryId = 1 }
                     );
 
             });

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AddToCartAPI.Model.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210217114200_initial")]
+    [Migration("20210217140615_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -91,39 +91,93 @@ namespace AddToCartAPI.Model.Migrations
                     b.HasData(
                         new
                         {
-                            ProductId = 4L,
+                            ProductId = 1L,
                             CategoryId = 1L,
                             Price = 150m,
-                            ProductName = "test_product4",
+                            ProductName = "test_product1",
                             Stock = 1000,
                             VariantId = 1L
                         },
                         new
                         {
-                            ProductId = 5L,
+                            ProductId = 2L,
+                            CategoryId = 1L,
+                            Price = 150m,
+                            ProductName = "test_product2",
+                            Stock = 1000,
+                            VariantId = 1L
+                        },
+                        new
+                        {
+                            ProductId = 3L,
+                            CategoryId = 1L,
+                            Price = 150m,
+                            ProductName = "test_product3",
+                            Stock = 1000,
+                            VariantId = 1L
+                        },
+                        new
+                        {
+                            ProductId = 4L,
                             CategoryId = 2L,
                             Price = 350m,
-                            ProductName = "test_product5",
+                            ProductName = "test_product4",
                             Stock = 500,
                             VariantId = 3L
                         },
                         new
                         {
-                            ProductId = 6L,
+                            ProductId = 5L,
                             CategoryId = 3L,
                             Price = 50m,
-                            ProductName = "test_product6",
+                            ProductName = "test_product5",
                             Stock = 750,
                             VariantId = 4L
                         },
                         new
                         {
+                            ProductId = 6L,
+                            CategoryId = 2L,
+                            Price = 120m,
+                            ProductName = "test_product6",
+                            Stock = 250,
+                            VariantId = 1L
+                        },
+                        new
+                        {
                             ProductId = 7L,
-                            CategoryId = 1L,
-                            Price = 20m,
+                            CategoryId = 3L,
+                            Price = 290m,
                             ProductName = "test_product7",
                             Stock = 250,
-                            VariantId = 6L
+                            VariantId = 1L
+                        },
+                        new
+                        {
+                            ProductId = 8L,
+                            CategoryId = 4L,
+                            Price = 40m,
+                            ProductName = "test_product8",
+                            Stock = 250,
+                            VariantId = 1L
+                        },
+                        new
+                        {
+                            ProductId = 9L,
+                            CategoryId = 1L,
+                            Price = 10m,
+                            ProductName = "test_product9",
+                            Stock = 250,
+                            VariantId = 1L
+                        },
+                        new
+                        {
+                            ProductId = 10L,
+                            CategoryId = 1L,
+                            Price = 30m,
+                            ProductName = "test_product10",
+                            Stock = 250,
+                            VariantId = 1L
                         });
                 });
 

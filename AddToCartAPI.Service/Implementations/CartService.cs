@@ -128,28 +128,30 @@ namespace AddToCartAPI.Service.Implementations
             // Retrieve cart from Db
             var cart = await GetCartFrDb(cartId);
 
-
-            foreach (var item in cart.Items)
-            {
-                item.Product = await _productRepository.GetProductAsync(item.ProductId);
-            }
-  
             // If cart not exists error message
             if (cart == null)
             {
                 returnList.message.status = "error";
-                returnList.message.text = "Shopping cart not found";
-                returnList.CartId = cartId;
+                returnList.message.text = "Cart does not exists";
                 return returnList;
             }
 
-            // If cart exists 
-            foreach (var item in cart.Items)
+            // If cart is empty
+            if (cart.Items.Count() == 0)
             {
-                var items = CartProductViewModel.GetCartProductViewModel(item);
-                returnList.Items.Add(items);
+                returnList.message.status = "error";
+                returnList.message.text = "Cart is empty";
+                return returnList;
             }
 
+            // If exists and not empty -> get products
+            foreach (var item in cart.Items)
+            {
+                item.Product = await _productRepository.GetProductAsync(item.ProductId);
+                var prd = CartProductViewModel.GetCartProductViewModel(item);
+                returnList.Items.Add(prd);
+            }
+ 
             returnList.CartId = cart.CartId;
             returnList.message.status = "success";
             returnList.message.text = "Shopping cart retrieved";

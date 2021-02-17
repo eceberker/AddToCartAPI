@@ -43,7 +43,6 @@ namespace AddToCartAPI.WebAPI.Controllers
                 return Ok(cartItems);
             }
 
-
         }
         /// <summary>
         /// Adds product to Shopping Cart requested from body

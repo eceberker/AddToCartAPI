@@ -68,10 +68,16 @@ namespace AddToCartAPI.Model.Migrations
                 columns: new[] { "ProductId", "CategoryId", "Price", "ProductName", "Stock", "VariantId" },
                 values: new object[,]
                 {
-                    { 4L, 1L, 150m, "test_product4", 1000, 1L },
-                    { 5L, 2L, 350m, "test_product5", 500, 3L },
-                    { 6L, 3L, 50m, "test_product6", 750, 4L },
-                    { 7L, 1L, 20m, "test_product7", 250, 6L }
+                    { 1L, 1L, 150m, "test_product1", 1000, 1L },
+                    { 2L, 1L, 150m, "test_product2", 1000, 1L },
+                    { 3L, 1L, 150m, "test_product3", 1000, 1L },
+                    { 4L, 2L, 350m, "test_product4", 500, 3L },
+                    { 5L, 3L, 50m, "test_product5", 750, 4L },
+                    { 6L, 2L, 120m, "test_product6", 250, 1L },
+                    { 7L, 3L, 290m, "test_product7", 250, 1L },
+                    { 8L, 4L, 40m, "test_product8", 250, 1L },
+                    { 9L, 1L, 10m, "test_product9", 250, 1L },
+                    { 10L, 1L, 30m, "test_product10", 250, 1L }
                 });
 
             migrationBuilder.CreateIndex(
