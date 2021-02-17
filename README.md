@@ -25,3 +25,5 @@ Swagger:
 Swagger UI is available on: /swagger/index.html
 
 There are two endpoints, all explanations can be found in swagger interface.
+
+10 Test products added for testing purposes, their ID's are 1 to 10, you can test adding these products, otherwise product not found error message will be showed.
