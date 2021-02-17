@@ -57,9 +57,9 @@ namespace AddToCartAPI.WebAPI.Controllers
         /// 
         ///         POST /ShoppingCart/AddProductToShoppingCart
         ///         {
-        ///             "CartId" : 9,
+        ///             "CartId" : 1,
         ///             "ProductId": 8,
-        ///             "ProductName": "test_product6",
+        ///             "ProductName": "test_product8",
         ///             "Quantity" : 1,
         ///             "Price" : 2000,
         ///             "VariantId" : 5,
