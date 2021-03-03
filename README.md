@@ -1,9 +1,7 @@
 # Basic Shopping Cart Web API built on .NET Core and EntityFramework
 
 
-Database is on AWS RDS, connectionstring is defined in appsettings.json file
 Database settings is in Startup.cs file.
-No need manual setup.
 
 
 Solution consists of following projects:
@@ -26,4 +24,4 @@ Swagger UI is available on: /swagger/index.html
 
 There are two endpoints, all explanations can be found in swagger interface.
 
-10 Test products added for testing purposes, their ID's are 1 to 10, you can test adding these products, otherwise product not found error message will be showed.
+
